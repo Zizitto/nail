@@ -63,11 +63,11 @@ abstract class Event
     /**
      * Set master
      *
-     * @param \AppBundle\Entity\User\Master $master
+     * @param Master $master
      *
      * @return Event
      */
-    public function setMaster(\AppBundle\Entity\User\Master $master = null)
+    public function setMaster(Master $master = null)
     {
         $this->master = $master;
 
@@ -77,7 +77,7 @@ abstract class Event
     /**
      * Get master
      *
-     * @return \AppBundle\Entity\User\Master
+     * @return Master
      */
     public function getMaster()
     {
@@ -87,11 +87,11 @@ abstract class Event
     /**
      * Set creator
      *
-     * @param \AppBundle\Entity\User\User $creator
+     * @param User $creator
      *
      * @return Event
      */
-    public function setCreator(\AppBundle\Entity\User\User $creator = null)
+    public function setCreator(User $creator = null)
     {
         $this->creator = $creator;
 
@@ -101,7 +101,7 @@ abstract class Event
     /**
      * Get creator
      *
-     * @return \AppBundle\Entity\User\User
+     * @return User
      */
     public function getCreator()
     {

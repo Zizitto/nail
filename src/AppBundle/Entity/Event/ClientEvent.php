@@ -28,11 +28,11 @@ class ClientEvent extends Event
     /**
      * Set client
      *
-     * @param \AppBundle\Entity\User\Client $client
+     * @param Client $client
      *
      * @return ClientEvent
      */
-    public function setClient(\AppBundle\Entity\User\Client $client = null)
+    public function setClient(Client $client = null)
     {
         $this->client = $client;
 
@@ -42,7 +42,7 @@ class ClientEvent extends Event
     /**
      * Get client
      *
-     * @return \AppBundle\Entity\User\Client
+     * @return Client
      */
     public function getClient()
     {
