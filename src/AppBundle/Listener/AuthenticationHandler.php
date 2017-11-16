@@ -2,7 +2,7 @@
 
 namespace  AppBundle\Listener;
 
-use Doctrine\Bundle\DoctrineBundle\Registry;
+use Doctrine\Common\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Http\Authentication\AuthenticationSuccessHandlerInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,7 +12,7 @@ class AuthenticationHandler implements AuthenticationSuccessHandlerInterface
 {
     private $doctrine;
 
-    public function __construct(Registry $doctrine) {
+    public function __construct(ManagerRegistry $doctrine) {
         $this->doctrine = $doctrine;
     }
 
